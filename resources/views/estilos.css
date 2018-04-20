@@ -1,0 +1,124 @@
+/*inicio de navbar*/
+.navbar {
+   background-color: #33AFFF;
+}
+/*
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+*/
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-brand {
+    color: black;
+}
+/*fin de navbar*/
+/*fin de navbar*/
+
+
+html{
+/*css for full size background image*/
+
+  
+  height: 100%;
+  background-color: #2E2EFE;
+  color: #2E2EFE;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+ 
+}
+body{
+	  background-color: #2E2EFE;
+  color: #2E2EFE;
+}
+
+
+
+/*inicio de navbar*/
+
+
+.title-arch {
+		text-align: center;
+		margin: 90px 0;
+		font-size: 22px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+.project {
+	width: 90%;
+	height: 450px;
+	background-image: url(file:///C:/xampp/htdocs/orientacion/resources/views/);
+	background-size: cover;
+	background-position: center;
+	padding: 0 !important;
+	float:left;
+}
+
+.project-2 {
+	background-image: url(file:///C:/xampp/htdocs/orientacion/resources/views/a.jpg);
+}
+
+.project-3 {
+	background-image: url(file:///C:/xampp/htdocs/orientacion/resources/views/c.jpg);
+}
+
+.project-4 {
+	background-image: url(file:///C:/xampp/htdocs/orientacion/resources/views/d.jpg);
+}
+/*.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #2e2efe; 
+}*/
+.project-hover {
+	width: 100%;
+	height: 100%;
+	color: black;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	  background-color: #e38321;
+	padding: 40% 30px !important;
+}
+
+.project-hover hr {
+	height: 30px;
+	width: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background-color: rgba(255, 255, 255, 1);
+	border: 0;
+}
+
+.project-hover a {
+	color: rgba(255, 255, 255, 1);
+	padding: 2px 22px;
+	line-height: 40px;
+	border: 2px solid rgba(255, 255, 255, 1);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.project-hover a:hover {
+	border-color: rgba(51, 51, 51, 1);
+	color: rgba(51, 51, 51, 1);
+	background-color: #FFF;
+}
+
+.project:hover .project-hover {
+	opacity: 1;
+}
+
+.project:hover .project-hover hr {
+	width: 100%;
+	height: 5px;
+}

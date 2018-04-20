@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+<meta charset="UTF-8">
+<link href="file:\\\C:\xampp\htdocs\orientacion\public\bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+</head>
+<body>
+
+<!-- inicio nav -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- fin nav -->
+<div class="container-fluid">
+    <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- Form Name -->
+<legend>Maestros</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Nombres" id="Etiqueta">Nombre(s)</label>  
+  <div class="col-md-4">
+  <input id="Nombres" name="Nombres" type="text" placeholder="EJ. JAVIER" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Apellidos" id="Etiqueta">Apellidos</label>  
+  <div class="col-md-4">
+  <input id="Apellidos" name="Apellidos" type="text" placeholder="EJ. MARQUEZ RODRIGUEZ" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Id_Escuela" id="Etiqueta">Escuela</label>
+  <div class="col-md-4">
+    <select id="Id_Escuela" name="Id_Escuela" class="form-control">
+      <option value="1">BENITO ENCINO</option>
+      <option value="2">BENITO LAS NIEVES</option>
+      <option value="3">BENITO LAS NIEVES</option>
+      <option value="4">FORD</option>
+      <option value="5">MIGUEL HIDALGO</option>
+      <option value="6">PRIMERO DE MAYO</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Id_Grupo" id="Etiqueta">Grupo Asignado</label>
+  <div class="col-md-4">
+    <select id="Id_Grupo" name="Id_Grupo" class="form-control">
+      <option value="1">6°A</option>
+      <option value="2">6°B</option>
+      <option value="3">6°C</option>
+    </select>
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Contraeña" id="Etiqueta">Contraseña</label>
+  <div class="col-md-4">
+    <input id="Contraeña" name="Contraeña" type="password" placeholder="PassWord" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="C" id="Etiqueta">Confirmar Contraseña</label>
+  <div class="col-md-4">
+    <input id="C" name="C" type="password" placeholder="Repita Contraseña" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-4">
+    <button id="button1id" name="button1id" class="btn btn-success">Aceptar</button>
+    <button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+  
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
