@@ -1,8 +1,7 @@
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-body{
-	padding: 50px;
-	background: url("C:/xampp/htdocs/orientacion/resources/views/jungle.jpg")no-repeat center center fixed; 
+body {
+/*css for full size background image*/
+  background: url("C:/xampp/htdocs/orientacion/public/img/jungle.jpg")no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,94 +12,134 @@ body{
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
-
-
-
-
-
-label{
+ 
+}.transparent .tuyin 
+	{
+	margin-top: 20px; 
+	background-color: rgba(255, 255, 255, 0.37);
+	border: 1px solid #F7F7F7;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px 0px rgba(181, 181, 181, 0.3);
+	padding: 4%;
+	text-align: center;
+	width: 97%;
+	min-height: 315px;
 	position: relative;
-	cursor: pointer;
-	color: #C321CB;
+	margin-bottom: 25px;
+	 }
+.transparent .tuyin .title 
+	{
+	text-align: center; 
+	color: #FFF;
+	font-size: 49px; 
+	}
+.transparent .tuyin .plan-name 
+	{
 	font-size: 20px;
+	font-weight: 400;
+	border-bottom: 1px solid #FFF;
+	padding-bottom: 15px;
+	padding: 10px
+	}
+
+.transparent .tuyin .text
+	{
+	margin-top: 20px; 
+	color: #474747;
+	font-weight: 300;
+	margin-bottom: 13px; 
+	font-size: 16px;
+	text-align: justify;
+	}
+.twPc-div {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e1e8ed;
+    border-radius: 6px;
+    height: 200px;
+    max-width: 340px; // orginal twitter width: 290px;
 }
-
-input[type="checkbox"], input[type="radio"]{
-	position: absolute;
-	right: 9000px;
+.twPc-bg {
+    background-image: url("https://pbs.twimg.com/profile_banners/50988711/1384539792/600x200");
+    background-position: 0 50%;
+    background-size: 100% auto;
+    border-bottom: 1px solid #e1e8ed;
+    border-radius: 4px 4px 0 0;
+    height: 95px;
+    width: 100%;
 }
-
-/*Radio Toggle*/
-
-.toggle input[type="radio"] + .label-text:before{
-	content: "\f204";
-	font-family: "FontAwesome";
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing:antialiased;
-	width: 1em;
-	display: inline-block;
-	margin-right: 10px;
+.twPc-block {
+    display: block !important;
 }
-
-.toggle input[type="radio"]:checked + .label-text:before{
-	content: "\f205";
-	color: #16a085;
-	animation: effect 250ms ease-in;
+.twPc-button {
+    margin: -35px -10px 0;
+    text-align: right;
+    width: 100%;
 }
-
-.toggle input[type="radio"]:disabled + .label-text{
-	color: #aaa;
+.twPc-avatarLink {
+    background-color: #fff;
+    border-radius: 6px;
+    display: inline-block !important;
+    float: left;
+    margin: -30px 5px 0 8px;
+    max-width: 100%;
+    padding: 1px;
+    vertical-align: bottom;
 }
-
-.toggle input[type="radio"]:disabled + .label-text:before{
-	content: "\f204";
-	color: #ccc;
+.twPc-avatarImg {
+    border: 2px solid #fff;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #fff;
+    height: 72px;
+    width: 72px;
 }
-
-
-@keyframes effect{
-	0%{transform: scale(0);}
-	25%{transform: scale(1.3);}
-	75%{transform: scale(1.4);}
-	100%{transform: scale(1);}
+.twPc-divUser {
+    margin: 5px 0 0;
 }
-
-#video_background { 
-	 min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
- 
-  position: fixed;    
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%); 
- 
-  z-index: -100;
- 
-  background-size: cover;
-	
+.twPc-divName {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
 }
-#video_pattern { 
-	background:#fff; 
-	position: fixed; 
-	opacity: 0.8; 
-	left: 0px; 
-	top: 0px; 
-	width: 100%; 
-	height: 100%; 
-	z-index: 1; 
+.twPc-divName a {
+    color: inherit !important;
 }
-.col-md-4
-{
-text-align: center;	
-
+.twPc-divStats {
+    margin-left: 11px;
+    padding: 10px 0;
 }
-
-
+.twPc-Arrange {
+    box-sizing: border-box;
+    display: table;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+    table-layout: auto;
+}
+ul.twPc-Arrange {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.twPc-ArrangeSizeFit {
+    display: table-cell;
+    padding: 0;
+    vertical-align: top;
+}
+.twPc-ArrangeSizeFit a:hover {
+    text-decoration: none;
+}
+.twPc-StatValue {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.15s ease-in-out 0s;
+}
+.twPc-StatLabel {
+    color: #8899a6;
+    font-size: 10px;
+    letter-spacing: 0.02em;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: color 0.15s ease-in-out 0s;
+}

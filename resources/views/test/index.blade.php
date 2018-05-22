@@ -12,7 +12,7 @@
             
             <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
                 <div class="card card-inverse card-info">
-                    <img class="card-img-top" src="../img/prueba.png">
+                    <img class="card-img-top" src="../img/Tigre Personaje/Personajes pag principal Artes, Deportes y Academico/Tigre Academico.png">
                     <div class="card-block">
                         
                             
@@ -67,4 +67,13 @@
         </div>
 </div>
 
+@endsection
+
+@section('scripts')
+<script>
+    window.onload = function() {
+    //funciones a ejecutar
+    document.body.style.background = "#f3f3f3 url('../../img/jungle.jpg') no-repeat";
+    };
+</script>
 @endsection

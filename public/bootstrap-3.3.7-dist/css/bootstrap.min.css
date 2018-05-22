@@ -77,6 +77,11 @@ a:hover
   background-size: cover;
 	
 }
+#aver
+{
+	position: left;
+}
+
 #video_pattern { 
 	background:#fff; 
 	position: fixed; 
@@ -87,8 +92,25 @@ a:hover
 	height: 100%; 
 	z-index: 1; 
 }
-html,
+
 body {
+/*css for full size background image*/
+  background: url("../../img/Pag Principal.jpg")no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  height: 100%;
+  background-color: ;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+ 
+}
+
+#solo
+{
 /*css for full size background image*/
   background: url("../../img/jungle.jpg")no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -103,9 +125,14 @@ body {
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
  
 }
+span
+{
+	color: orange;
+}
 legend
 {
-	color: black;
+	color: orange;
+
 }
 .col-md-4
 {
@@ -303,7 +330,7 @@ inicio de tarjetas*/
         }
 
         .cta-contents{
-            text-align: center;
+            text-align: left;
         }
 }
 
@@ -1036,3 +1063,102 @@ color: #fff;
 {
 	color: black;
 }
+
+
+.transparent .tuyin 
+	{
+	margin-top: 20px; 
+	background-color: rgba(255, 255, 255, 0.37);
+	border: 1px solid #F7F7F7;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px 0px rgba(181, 181, 181, 0.3);
+	padding: 4%;
+	text-align: center;
+	width: 97%;
+	min-height: 315px;
+	position: relative;
+	margin-bottom: 25px;
+	 }
+.transparent .tuyin .title 
+	{
+	text-align: center; 
+	color: #FFF;
+	font-size: 49px; 
+	}
+.transparent .tuyin .plan-name 
+	{
+	font-size: 20px;
+	font-weight: 400;
+	border-bottom: 1px solid #FFF;
+	padding-bottom: 15px;
+	padding: 10px
+	}
+
+.transparent .tuyin .text
+	{
+	margin-top: 20px; 
+	color: #474747;
+	font-weight: 300;
+	margin-bottom: 13px; 
+	font-size: 16px;
+	text-align: justify;
+	}
+#TEX
+{
+	color: black;
+}
+
+.cta-title
+{
+	text-align: left;
+}
+
+
+
+.main-container{
+    
+background: #d53369; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #d53369 , #cbad6d); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #d53369 , #cbad6d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    }
+.highlight  {
+    width: 600px;
+    color: white;
+    background: rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    padding: 3%;
+    
+	}
+    
+.highlight img {
+    
+    float: left;
+    width: 100px;
+    height: 100px; 
+    margin: 10px;
+    }
+    
+.highlight ul {
+    list-style-image: url('http://icons.iconarchive.com/icons/yusuke-kamiyamane/fugue/16/tick-small-icon.png');
+    margin-left: 1%;
+    float: left; 
+    clear: right
+    }
+    
+.highlight button {
+   margin-left: 1%;
+    float: right;
+    }
+
+.highlight h1,h2,h3,h4,h5,h6 {
+    padding-bottom: 2%;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.41);
+    font-size:20px;
+    text-align : center;
+    text-transform: uppercase;
+    }
+    
+.highlight p {
+    text-align: justify;
+    }
