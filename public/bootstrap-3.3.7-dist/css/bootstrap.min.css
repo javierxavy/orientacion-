@@ -109,6 +109,26 @@ body {
  
 }
 
+a:link,a:visited,a:active,a:hover
+{
+	color: white;
+}
+#lis
+{
+	text-align: left;
+}
+#uno
+{
+	background-color: #0690F0;
+}
+#dos
+{
+	background-color: #F01106;
+}
+#tres
+{
+	background-color: #F0CD06;
+}
 #solo
 {
 /*css for full size background image*/

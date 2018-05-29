@@ -10,7 +10,7 @@
 
 
 </head>
-<body>
+<body id="solo">
 
 <!-- inicio nav -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -29,30 +29,32 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Menu <span class="sr-only">(current)</span></a></li>
+        <li><a href="{{route('test-index')}}">Menu <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Libros</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">#SoyProfecional <span class="caret"></span></a>
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">#SoyProfesional <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Medico</a></li>
-            <li><a href="#">Diseñador</a></li>
-            <li><a href="#">Turismo</a></li>
+            <li><a href="{{route('Menu')}}">Menu</a></li>
+            <li><a href="{{route('Medicina')}}">Medico</a></li>
+            <li><a href="{{route('Diseno')}}">Diseñador</a></li>
+            <li><a href="{{route('Turismo')}}">Turismo</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Psicologo</a></li>
-            <li><a href="#">Dentista</a></li>
-            <li><a href="#">Deportista</a></li>
+            <li><a href="{{route('Psicologo')}}">Psicologo</a></li>
+            <li><a href="{{route('Dentista')}}">Dentista</a></li>
+            <li><a href="{{route('Deportista')}}">Deportista</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Ing. Sistemas</a></li>
-            <li><a href="#">Profesor</a></li>
-            <li><a href="#">Paleontologo</a></li>
+            <li><a href="{{route('Sistemas')}}">Ing. Sistemas</a></li>
+            <li><a href="{{route('Profesor')}}">Profesor</a></li>
+            <li><a href="{{route('Paleontologo')}}">Paleontologo</a></li>
           </ul>
         </li>
+        <li><a href="{{route('Guias')}}">Guias</a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
         
         
-          <li><a href="{{ route('logout') }}">Cerrar Sesion</a></li>
+          <li><a class="glyphicon glyphicon glyphicon-user" href="{{ route('logout') }}"> Cerrar-Sesion</a></li>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

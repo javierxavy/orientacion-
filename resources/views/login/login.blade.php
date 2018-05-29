@@ -28,7 +28,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
 
-            <h3 class="panel-title">Please sign in</h3>
+            <h3 class="panel-title">Inicia Sesion</h3>
         </div>
           <div class="panel-body">
             <form accept-charset="UTF-8" role="form">

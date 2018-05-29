@@ -18,6 +18,20 @@ class testController extends Controller
         return view('test.index');
     }
 
+    public function Colores()
+    {
+        return view('test.Colores');
+    }
+    public function Cuestionario()
+    {
+        return view('test.Cuestionario');
+    }
+
+    public function ModosdeAprendizaje()
+    {
+        return view('test.Modos de Aprendizaje');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
