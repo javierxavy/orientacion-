@@ -18,22 +18,21 @@ Route::get('/', function () {
 });
 
 
-Route::get('/Colores','testController@Colores')->name('Colores');
-
-Route::get('/Cuestionario','testController@Cuestionario')->name('Cuestionario');
-
-Route::get('/ModosdeAprendizaje','testController@ModosdeAprendizaje')->name('ModosdeAprendizaje');
-
-
 Auth::routes();
 
 Route::group(['middleware' => 'auth'], function() {
 
 	Route::get('/test', 'testController@index')->name('test-index');
 
+	Route::get('/Colores','testController@Colores')->name('Colores');
+
+	Route::get('/Cuestionario','testController@Cuestionario')->name('Cuestionario');
+
+	Route::get('/ModosdeAprendizaje','testController@ModosdeAprendizaje')->name('ModosdeAprendizaje');
+
 });
 
-Route::get('/Azul','colorescontroller@Azul')->name('Azul');
+Route::post('/test-color','colorescontroller@store')->name('registro-color');
 Route::get('/Amarillo','colorescontroller@Amarillo')->name('Amarillo');
 Route::get('/Blanco','colorescontroller@Blanco')->name('Blanco');
 Route::get('/Morado','colorescontroller@Morado')->name('Morado');
@@ -64,6 +63,7 @@ Route::get('/Turismo','profesionesController@Turismo')->name('Turismo');
 Route::get('/Paleontologo','profesionesController@Paleontologo')->name('Paleontologo');
 
 Route::get('/Formulario','formularioController@Formulario')->name('Formulario');
+Route::post('/registro-persona','formularioController@registro')->name('registro-persona');
 
 Route::get('/ResultadoAcademico','resultadosController@Academico')->name('ResultadoAcademico');
 Route::get('/ResultadoArtes','resultadosController@Artes')->name('ResultadoArtes');

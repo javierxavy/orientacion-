@@ -2,7 +2,8 @@
 
 @section('content')
 <div class="container-fluid">
-    <form class="form-horizontal">
+    <form action="{{ route('registro-persona') }}" method="POST" class="form-horizontal">
+      {{ csrf_field() }}
 <fieldset>
 
 <!-- Form Name -->
@@ -16,9 +17,17 @@
 
 <!-- Text input-->
 <div class="form-group">
+  <label class="col-md-4 control-label" id="Etiqueta">Usuario</label>  
+  <div class="col-md-4">
+  <input id="Id_Nombres" name="username" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<div class="form-group">
   <label class="col-md-4 control-label" for="Id_Nombres" id="Etiqueta">Nombre(s)</label>  
   <div class="col-md-4">
-  <input id="Id_Nombres" name="Id_Nombres" type="text" placeholder="Ej. Javier" class="form-control input-md" required=""  pattern="[A-Z]">
+  <input id="Id_Nombres" name="nombre" type="text" placeholder="Ej. Javier" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -27,7 +36,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Id_Apellido" id="Etiqueta">Apellidos</label>  
   <div class="col-md-4">
-  <input id="Id_Apellido" name="Id_Apellido" type="text" placeholder="Ej. Marquez Rodriguez" class="form-control input-md" required="" maxlength="30" pattern="[A-Z,a-z]">
+  <input id="Id_Apellido" name="apellidos" type="text" placeholder="Ej. Marquez Rodriguez" class="form-control input-md" required="" maxlength="30">
     
   </div>
 </div>
@@ -36,13 +45,13 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Id_Escuela" id="Etiqueta">Escuela</label>
   <div class="col-md-4">
-    <select id="Id_Escuela" name="Id_Escuela" class="form-control">
-      <option value="1">BENITO ENCINO</option>
-      <option value="2">BENITO LAS NIEVES</option>
-      <option value="3">FELIPE ANGELES</option>
-      <option value="4">FORD</option>
-      <option value="5">MIGUEL HIDALGO</option>
-      <option value="6">PRIMERO DE MAYO</option>
+    <select id="Id_Escuela" name="escuela" class="form-control">
+      <option value="Benito Encino">BENITO ENCINO</option>
+      <option value="Benito Las Nieves">BENITO LAS NIEVES</option>
+      <option value="Felipe Angeles">FELIPE ANGELES</option>
+      <option value="Ford">FORD</option>
+      <option value="Miguel Hidalgo">MIGUEL HIDALGO</option>
+      <option value="Primero de Mayo">PRIMERO DE MAYO</option>
     </select>
   </div>
 </div>
@@ -51,10 +60,20 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Id_Grupo" id="Etiqueta">Grupo</label>
   <div class="col-md-4">
-    <select id="Id_Grupo" name="Id_Grupo" class="form-control">
-      <option value="1">6°A</option>
-      <option value="2">6°B</option>
-      <option value="3">6°C</option>
+    <select id="Id_Grupo" name="grupo" class="form-control">
+      <option value="6°A">6°A</option>
+      <option value="6°B">6°B</option>
+      <option value="6°C">6°C</option>
+    </select>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Id_Grupo" id="Etiqueta">Grupo</label>
+  <div class="col-md-4">
+    <select id="Id_Grupo" name="tipo" class="form-control">
+      <option value="maestro">MAESTRO</option>
+      <option value="alumno">ALUMNO</option>
     </select>
   </div>
 </div>
@@ -63,9 +82,9 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Id_Sexo" id="Etiqueta">Sexo</label>
   <div class="col-md-4">
-    <select id="Id_Sexo" name="Id_Sexo" class="form-control">
-      <option value="1">Masculino</option>
-      <option value="2">Femenino</option>
+    <select id="Id_Sexo" name="sexo" class="form-control">
+      <option value="hombre">Masculino</option>
+      <option value="mujer">Femenino</option>
     </select>
   </div>
 </div>
@@ -74,7 +93,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Id_Contraseña" id="Etiqueta">Contraseña</label>
   <div class="col-md-4">
-    <input id="Id_Contraseña" name="Id_Contraseña" type="password" placeholder="Password" class="form-control input-md" required="">
+    <input id="Id_Contraseña" name="password" type="password" placeholder="Password" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -92,8 +111,8 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="button1id"></label>
   <div class="col-md-4">
-    <button id="button1id" name="button1id" class="btn btn-success">Aceptar</button>
-    <button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>
+    <button type="submit" class="btn btn-success">Aceptar</button>
+    <button class="btn btn-danger">Cancelar</button>
   </div>
 </div>
 

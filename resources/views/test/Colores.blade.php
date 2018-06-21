@@ -27,17 +27,20 @@ El Color Que Mas Me Gusta
                      </div>
                 </div>
 
-                <div class="bs-calltoaction bs-calltoaction-primary">
-                    <div class="row">
-                        <div class="col-md-4 cta-contents">
-                            <h1 class="cta-title">Azul  </h1>
-                            
-                        </div>
-                        <div class="col-md-3 cta-button">
-                            <a href="{{route('Azul')}}" class="btn btn-lg btn-block btn-primary">Mas...</a>
+                <form method="POST" action="{{route('registro-color')}}">
+                {{ csrf_field() }}
+                    <div class="bs-calltoaction bs-calltoaction-primary">
+                        <div class="row">
+                            <div class="col-md-4 cta-contents">
+                                <h1 class="cta-title">Azul  </h1>
+                            </div>
+                            <input type="hidden" value="azul" name="color">
+                            <div class="col-md-3 cta-button">
+                                <button type="submit" class="btn btn-lg btn-block btn-primary">Mas...</button>
+                            </div>
                         </div>
                      </div>
-                </div>
+                </form>
 
                 <div class="bs-calltoaction bs-calltoaction-info">
                     <div class="row">
